@@ -7,13 +7,14 @@ class Player
     private String playername;
     private int attempts;
     private int secretnumber;
+    private int playernumber;
 
     public Player()
     {
+        playernumber = 0;
         playername = "";
         attempts = 0;
         secretnumber = (int)(Math.random() * 20 + 1);
-        mainMenu();
     }
     public String getName()
     {
@@ -27,6 +28,11 @@ class Player
     {
         return secretnumber;
     }
+    public int getPlayerNumber()
+    {
+        return playernumber;
+    }
+
     public void mainMenu()
     {
         try {
@@ -42,7 +48,9 @@ class Player
         }
         System.out.println("Well, " + playername + ", I am thinking of a number between 1 and 20.");
         System.out.println("Take a guess. You have 6 attempts!");
-        anotherAttempt();
+        do{
+            anotherAttempt();
+        }while(attempts < 7);
     }
     public void anotherAttempt()
     {
@@ -57,23 +65,20 @@ class Player
         try {
             Scanner sc = new Scanner(System.in);
             System.out.println("Please enter a number");
-            int playernumber = sc.nextInt();
+            playernumber = sc.nextInt();
             if (playernumber == secretnumber) {
                 System.out.println("Good Job " + playername + "! You guessed my number in " + attempts + " guesses!");
                 playAgain();
             } else if (playernumber > secretnumber) {
                 System.out.println("Your guess is too high!");
                 System.out.println("Take a guess");
-                anotherAttempt();
             } else {
                 System.out.println("Your guess is too low!");
                 System.out.println("Take a guess");
-                anotherAttempt();
             }
         }catch(InputMismatchException e)
         {
             attempts--;
-            anotherAttempt();
         }
     }
     public void playAgain()
@@ -93,5 +98,21 @@ class Player
         {
             playAgain();
         }
+    }
+
+    public void setPlayername(String playername) {
+        this.playername = playername;
+    }
+
+    public void setAttempts(int attempts) {
+        this.attempts = attempts;
+    }
+
+    public void setSecretnumber(int secretnumber) {
+        this.secretnumber = secretnumber;
+    }
+
+    public void setPlayernumber(int playernumber) {
+        this.playernumber = playernumber;
     }
 }
