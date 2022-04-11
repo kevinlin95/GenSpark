@@ -23,8 +23,7 @@ class PlayerTest {
     @DisplayName("Loop to rerun game")
     @Test()
     void anotherAttempt(){
-        player.setAttempts(7);
-
+        player.setAttempts(6);
     }
 
     @DisplayName("Player number is in the range of 1 - 20")
