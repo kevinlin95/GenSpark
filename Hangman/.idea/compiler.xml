@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="GuessTheNumber" />
+        <module name="Hangman" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hangman" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>

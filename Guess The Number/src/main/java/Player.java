@@ -14,7 +14,7 @@ class Player
         playernumber = 0;
         playername = "";
         attempts = 0;
-        secretnumber = (int)(Math.random() * 20 + 1);
+        secretnumber = 0;
     }
     public String getName()
     {
@@ -39,10 +39,7 @@ class Player
             System.out.println("Hello, what is your name?");
             Scanner sc = new Scanner(System.in);
             playername = sc.next();
-        }catch(IllegalStateException e)
-        {
-            System.out.println("not a valid name");
-        }catch(NoSuchElementException e)
+        }catch(IllegalStateException | NoSuchElementException e)
         {
             System.out.println("not a valid name");
         }
