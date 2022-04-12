@@ -1,75 +1,67 @@
 import java.util.Scanner;
 import java.util.*;
-// add junit testing
-// remove unnecessary methods/fields
-//
+
+
 class Hangman
 {
-    private String [] playerinput;
-    private String [] computerword;
-    private String [] playerguesses;
-    private String [] missedletters;
-    private int playerattemptsucess = 0;
+    List <String> playerinput = new ArrayList<>();
+    List <String> computerword = new ArrayList<>();
+    List <String> playerguesses = new ArrayList<>();
+    List <String> missedletters = new ArrayList<>();
     private int playerattemptfailed = 0;
 
     public Hangman (String startingword){
-        computerword = startingword.split("");
-        mainMenu();
+        Collections.addAll(computerword, startingword.split(""));
+        System.out.println("H A N G M A N!");
+        addLetter();
+
     }
 
     public void addLetter(){
+        if (playerattemptfailed == 4){
+            System.out.println("Game Over!");
+            playAgain();
+        }
+        if(Objects.equals(playerinput.toString(), computerword.toString())){
+            System.out.println("You win!");
+            playAgain();
+        }
         try {
             Scanner sc = new Scanner(System.in);
             System.out.println("Please enter a letter");
             String temp = sc.next();
-            for (String playerguess : playerguesses) {
-                if (!(temp instanceof String)) {
+            for (var playerguess : computerword) {
+                if (temp == null) {
                     throw new IllegalArgumentException("Must be a letter");
                 }
                 if (temp.equals(playerguess)) {
-                    System.out.println("You have already guessed that letter." +
-                            "Choose again");
+                    System.out.println("Matching Letter!");
+                    playerinput.add(computerword.indexOf(playerguess), playerguess);
                 }
-                playerguesses[playerattemptfailed] = temp;
-                missedletters[playerattemptfailed] = temp;
-                for (int i = 0; i < computerword.length; i++) {
-                    if (Objects.equals(Integer.parseInt(playerguesses[playerattemptsucess],1), i)) {
-                        playerinput[i] = playerguess;
-                        playerattemptsucess++;
-                        returnFigureCount(playerattemptfailed);
-                        System.out.println(Arrays.toString(playerinput));
-                    }
+                if (!temp.equals(playerguess)){
+                    System.out.println("Does not match!");
+                    missedletters.add(temp);
                     playerattemptfailed++;
-                    returnFigureCount(playerattemptfailed);
-                    System.out.println(Arrays.toString(playerinput));
                 }
+                playerguesses.add(temp);
+                System.out.println(playerinput);
+                returnFigureCount(playerattemptfailed);
+                returnAllGuesses();
                 returnMissedLetters();
+                addLetter();
             }
+
         }catch(NoSuchElementException | IllegalStateException e){
             returnFigureCount(playerattemptfailed);
         }
     }
 
-    public void mainMenu()
-    {
-        try {
-            System.out.println("H A N G M A N");
-            String[] str = new String[playerinput.length];
-            System.arraycopy(playerinput, 0, str, 0, playerinput.length);
-        do {
-            addLetter();
-        }while(playerattemptfailed < 4);
-        if (playerattemptfailed == 4){
-            System.out.println("Game Over!");
-            playAgain();
+    public void returnAllGuesses(){
+        System.out.print("Current guesses: ");
+        for (String playerguess : playerguesses) {
+            System.out.print(playerguess.toCharArray());
         }
-        if(Arrays.equals(str, computerword)) {
-            System.out.println("You win!");
-            playAgain();
-        }
-    }catch(IndexOutOfBoundsException e) {
-            System.out.println(e);
-        }
+        System.out.println();
     }
 
     public void returnMissedLetters(){
@@ -77,6 +69,7 @@ class Hangman
         for (String missedletter : missedletters) {
             System.out.print(missedletter.toCharArray());
         }
+        System.out.println();
     }
 
     public void playAgain()
@@ -89,9 +82,8 @@ class Hangman
                 if (playerattemptfailed != 0) {
                     playerattemptfailed = 0;
                 }
-                if(playerattemptsucess != 0)
-                {
-                    playerattemptsucess = 0;
+                if(playerinput != null){
+                    playerinput = null;
                 }
                 if(missedletters != null){
                     missedletters = null;
@@ -99,7 +91,7 @@ class Hangman
                 if(playerguesses != null){
                     playerguesses = null;
                 }
-                mainMenu();
+                addLetter();
             } else
                 System.exit(0);
         }catch(InputMismatchException e)
@@ -145,36 +137,20 @@ class Hangman
         }
     }
 
-    public String[] getComputerword() {
-        return computerword;
-    }
-
-    public void setComputerword(String[] computerword) {
-        this.computerword = computerword;
-    }
-
-    public String[] getPlayerguesses() {
+    public List<String> getPlayerguesses() {
         return playerguesses;
     }
 
-    public void setPlayerguesses(String[] playerguesses) {
+    public void setPlayerguesses(List<String> playerguesses) {
         this.playerguesses = playerguesses;
     }
 
-    public String[] getMissedletters() {
+    public List<String> getMissedletters() {
         return missedletters;
     }
 
-    public void setMissedletters(String[] missedletters) {
+    public void setMissedletters(List<String> missedletters) {
         this.missedletters = missedletters;
-    }
-
-    public int getPlayerattemptsucess() {
-        return playerattemptsucess;
-    }
-
-    public void setPlayerattemptsucess(int playerattemptsucess) {
-        this.playerattemptsucess = playerattemptsucess;
     }
 
     public int getPlayerattemptfailed() {
@@ -185,11 +161,19 @@ class Hangman
         this.playerattemptfailed = playerattemptfailed;
     }
 
-    public String[] getPlayerinput() {
+    public List<String> getComputerword() {
+        return computerword;
+    }
+
+    public void setComputerword(List<String> computerword) {
+        this.computerword = computerword;
+    }
+
+    public List<String> getPlayerinput() {
         return playerinput;
     }
 
-    public void setPlayerinput(String[] playerinput) {
+    public void setPlayerinput(List<String> playerinput) {
         this.playerinput = playerinput;
     }
 }

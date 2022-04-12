@@ -3,7 +3,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-import static org.mockito.Mockito.*;
+import java.util.List;
+import java.util.Objects;
+
+//import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class HangmanTest {
@@ -30,7 +33,8 @@ class HangmanTest {
     @DisplayName("Option to play again if player word matches computer word")
     @Test
     void mainMenuEqualWordsPlayAgain(){
-        test.setPlayerinput(test.getComputerword());
+
+        assertTrue(Objects.equals(test.getPlayerinput().toString(), test.getComputerword().toString()));
     }
 
     @DisplayName("Loop to rerun game")
