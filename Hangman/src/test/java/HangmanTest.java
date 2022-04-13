@@ -3,10 +3,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
 import java.util.Objects;
 
-//import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class HangmanTest {
@@ -20,13 +19,12 @@ class HangmanTest {
     @RepeatedTest(4)
     @DisplayName("User Input - Add Letters")
     void addALetter(){
-
+        doThrow(IllegalArgumentException.class).when(test).setComputerword(null);
     }
 
     @DisplayName("Option to play again if maximum attempt exceeded")
     @Test
     void mainMenuMaxAttemptPlayAgain() {
-        test.setPlayerattemptfailed(4);
 
     }
 

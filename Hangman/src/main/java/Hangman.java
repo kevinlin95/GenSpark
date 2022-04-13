@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.*;
-
+// fix playerinput
 
 class Hangman
 {
@@ -14,7 +14,6 @@ class Hangman
         Collections.addAll(computerword, startingword.split(""));
         System.out.println("H A N G M A N!");
         addLetter();
-
     }
 
     public void addLetter(){
