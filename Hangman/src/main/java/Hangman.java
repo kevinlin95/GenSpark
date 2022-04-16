@@ -5,23 +5,25 @@ import java.util.*;
 class Hangman
 {
     List <String> playerinput = new ArrayList<>();
-    List <String> computerword = new ArrayList<>();
     List <String> playerguesses = new ArrayList<>();
     List <String> missedletters = new ArrayList<>();
     private int playerattemptfailed = 0;
 
+    private String computerword;
+
     public Hangman (String startingword){
-        Collections.addAll(computerword, startingword.split(""));
+        //creating a string array with constructor = computerword
+        computerword = startingword;
         System.out.println("H A N G M A N!");
-        addLetter();
     }
 
     public void addLetter(){
+        //main method checks counter everytime a player adds a new letter
         if (playerattemptfailed == 4){
             System.out.println("Game Over!");
             playAgain();
         }
-        if(Objects.equals(playerinput.toString(), computerword.toString())){
+        if(Objects.equals(playerinput.toString(), computerword)){
             System.out.println("You win!");
             playAgain();
         }
@@ -29,28 +31,39 @@ class Hangman
             Scanner sc = new Scanner(System.in);
             System.out.println("Please enter a letter");
             String temp = sc.next();
-            for (var playerguess : computerword) {
-                if (temp == null) {
-                    throw new IllegalArgumentException("Must be a letter");
-                }
-                if (temp.equals(playerguess)) {
-                    System.out.println("Matching Letter!");
-                    playerinput.add(computerword.indexOf(playerguess), playerguess);
-                }
-                if (!temp.equals(playerguess)){
-                    System.out.println("Does not match!");
-                    missedletters.add(temp);
-                    playerattemptfailed++;
-                }
-                playerguesses.add(temp);
-                System.out.println(playerinput);
-                returnFigureCount(playerattemptfailed);
-                returnAllGuesses();
-                returnMissedLetters();
-                addLetter();
+            if (temp == null) {
+                throw new IllegalArgumentException("Must be a letter");
             }
-
-        }catch(NoSuchElementException | IllegalStateException e){
+            int index = computerword.indexOf(temp);
+            for(int i = 0; i < computerword.length(); i++) {
+                if (Objects.equals(temp.charAt(0), computerword.charAt(i))) {
+                    System.out.println("Matching Letter!");
+                    playerguesses.add(temp);
+                    playerinput.add(index, temp);
+                    System.out.println(playerinput);
+                    returnFigureCount(playerattemptfailed);
+                    returnAllGuesses();
+                    returnMissedLetters();
+                }
+                if (!Objects.equals(temp.charAt(0), computerword.charAt(i))){
+                    System.out.println("Does not match!");
+                    playerattemptfailed++;
+                    playerguesses.add(temp);
+                    missedletters.add(temp);
+                    System.out.println(playerinput);
+                    returnFigureCount(playerattemptfailed);
+                    returnAllGuesses();
+                    returnMissedLetters();
+                }
+                else if (temp.equals(playerinput.get(index))) {
+                    System.out.println("You have already tried that letter!");
+                }
+            }
+            System.out.println(playerinput);
+            returnFigureCount(playerattemptfailed);
+            returnAllGuesses();
+            returnMissedLetters();
+        }catch(NoSuchElementException | IllegalStateException |IndexOutOfBoundsException e){
             returnFigureCount(playerattemptfailed);
         }
     }
@@ -136,6 +149,14 @@ class Hangman
         }
     }
 
+    public String getComputerword() {
+        return computerword;
+    }
+
+    public void setComputerword(String computerword) {
+        this.computerword = computerword;
+    }
+
     public List<String> getPlayerguesses() {
         return playerguesses;
     }
@@ -160,13 +181,7 @@ class Hangman
         this.playerattemptfailed = playerattemptfailed;
     }
 
-    public List<String> getComputerword() {
-        return computerword;
-    }
 
-    public void setComputerword(List<String> computerword) {
-        this.computerword = computerword;
-    }
 
     public List<String> getPlayerinput() {
         return playerinput;
@@ -176,5 +191,32 @@ class Hangman
         this.playerinput = playerinput;
     }
 }
-
+/*
+for(int i = 0; i < computerword.size(); i++) {
+                int index = computerword.indexOf(temp);
+                if (temp == null) {
+                    throw new IllegalArgumentException("Must be a letter");
+                }
+                if (temp.equals(computerword.get(i))) {
+                        if (playerinput.isEmpty()) {
+                            System.out.println("Matching Letter!");
+                            playerinput.add(index, temp);
+                        } else if (temp.equals(playerinput.get(index))) {
+                            System.out.println("You have already tried that letter!");
+                            addLetter();
+                        }
+                }
+                if (!temp.equals(computerword.get(index))){
+                    System.out.println("Does not match!");
+                    missedletters.add(temp);
+                    playerattemptfailed++;
+                }
+                playerguesses.add(temp);
+                System.out.println(playerinput);
+                returnFigureCount(playerattemptfailed);
+                returnAllGuesses();
+                returnMissedLetters();
+                addLetter();
+                }
+ */
 

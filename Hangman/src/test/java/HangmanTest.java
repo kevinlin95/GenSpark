@@ -3,7 +3,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-import java.util.Objects;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,7 +31,7 @@ class HangmanTest {
     @Test
     void mainMenuEqualWordsPlayAgain(){
 
-        assertTrue(Objects.equals(test.getPlayerinput().toString(), test.getComputerword().toString()));
+        assertEquals(test.getPlayerinput().toString(), test.getComputerword());
     }
 
     @DisplayName("Loop to rerun game")
@@ -46,7 +45,7 @@ class HangmanTest {
     @Test
     void returnMissedLetters() {
 
-        assertNotSame(test.getMissedletters(), test.getComputerword(), "In case missed letters = computerword");
+        assertNotSame(test.getMissedletters().toString(), test.getComputerword(), "In case missed letters = computerword");
         assertNotNull(test.getMissedletters(), "There is something to return");
 
     }

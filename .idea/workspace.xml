@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0055f21-6483-4265-83b8-f6585c4553ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GenSpark.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/Hangman.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman/src/Hangman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/HumansVSGoblins/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Characters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Map.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumansVSGoblins/out/production/HumansVSGoblins/Goblins.class" beforeDir="false" afterPath="$PROJECT_DIR$/HumansVSGoblins/out/production/HumansVSGoblins/Goblins.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumansVSGoblins/out/production/HumansVSGoblins/Humans.class" beforeDir="false" afterPath="$PROJECT_DIR$/HumansVSGoblins/out/production/HumansVSGoblins/Humans.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumansVSGoblins/out/production/HumansVSGoblins/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/HumansVSGoblins/out/production/HumansVSGoblins/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Goblins.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Goblins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Humans.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Humans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/HumansVSGoblins/src/main/java/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,9 @@
   <component name="MacroExpansionManager">
     <option name="directoryName" value="mj1a7aax" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -41,11 +38,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +65,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
