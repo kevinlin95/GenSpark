@@ -15,6 +15,9 @@ class Hangman {
         computerword = startingword;
         System.out.println("H A N G M A N!");
     }
+    public Hangman(){
+
+    }
 
     public void addLetter() {
         //main method checks counter everytime a player adds a new letter
