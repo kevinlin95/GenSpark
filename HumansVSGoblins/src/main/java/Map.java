@@ -1,7 +1,9 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Map {
-    private JPanel HumansVsGoblins;
+    JPanel HumansVsGoblins;
     private JTextPane Desert3;
     private JTextPane Desert2;
     private JTextPane Plains4;
@@ -22,4 +24,36 @@ public class Map {
     private JTextPane Mountains4;
     private JTextPane Cave;
     private JTextPane Desert;
+    private JButton moveDownButton;
+    private JButton moveRightButton;
+    private JButton moveLeftButton;
+    private JButton Up;
+    private JButton settingsButton;
+
+    public Map() {
+        Up.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        moveDownButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        moveLeftButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        moveRightButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+    }
 }
