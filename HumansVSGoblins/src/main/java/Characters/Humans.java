@@ -1,4 +1,6 @@
-public class Humans implements Characters {
+package Characters;
+
+public class Humans implements Commands {
 
     private String humanName = ""; // name
     private int humanStrength = 0; // damage

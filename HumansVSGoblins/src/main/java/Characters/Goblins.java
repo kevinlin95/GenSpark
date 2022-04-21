@@ -1,4 +1,6 @@
-public class Goblins implements Characters{
+package Characters;
+
+public class Goblins implements Commands {
 
     private int goblinStrength = 0; //damage
     private int goblinStamina = 0; // movement
@@ -6,7 +8,7 @@ public class Goblins implements Characters{
 
     @Override
     public String speak(){
-        return "Human bad! MRMRMLRMLRMRLGMGLG! ";
+        return "Human bad! Die! ";
     }
 
     @Override

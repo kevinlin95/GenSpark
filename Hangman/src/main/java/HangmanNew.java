@@ -5,41 +5,8 @@ import java.util.*;
 
 class HangmanNew {
     private String playerOneName;
-    public static void main(String[] args) throws IOException {
-        HangmanNew playerOneGame = new HangmanNew();
-        Scanner keyboard = new Scanner(System.in);
-        try {
-            do {
-                System.out.println("HANGMAN GAME");
-                String word = playerOne(playerOneGame, keyboard);
-                List<Character> playerGuesses = new ArrayList<>();
-
-                int incorrectCount = 0; // tracking the hanged-man
-                while (true) { // main loop to run the game,
-                    printHangedMan(incorrectCount);
-                    if (incorrectCount >= 6) {
-                        System.out.println("You Lose!");
-                        System.out.println("The word was " + word);
-                        break;
-                    }
-                    printWordState(word, playerGuesses); // prints
-                    if (!getPlayerGuess(keyboard, word, playerGuesses)) {
-                        incorrectCount++;
-                    } // returns true if playerInput is a match to charAt word
-                    if (printWordState(word, playerGuesses)) {
-                        System.out.println("You win!");
-                        System.out.println("You've missed " + incorrectCount +
-                                " times! Amazing job!");
-                        System.out.println("View your score at at HangmanScores.txt");
-                        playerLog(playerOneGame.getPlayerOneName(), incorrectCount);
-                        break;
-                    } // returns true if playerGuesses length = word, meaning finished
-                }
-            } while (playAgainYesNo(keyboard));
-            System.exit(0);
-        }catch(final InputMismatchException e){
-            e.printStackTrace();
-        }
+    public static void main(String[] args) {
+        HangmanNew hangmanNew = new HangmanNew();
     }
 
     public static void playerLog(String name, int score) {
@@ -138,6 +105,43 @@ class HangmanNew {
         return (word.length() == correctCount);
     }
 
+    public void gameMode (){
+        HangmanNew playerOneGame = new HangmanNew();
+        Scanner keyboard = new Scanner(System.in);
+        try {
+            do {
+                System.out.println("HANGMAN GAME");
+                String word = playerOne(playerOneGame, keyboard);
+                List<Character> playerGuesses = new ArrayList<>();
+
+                int incorrectCount = 0; // tracking the hanged-man
+                while (true) { // main loop to run the game,
+                    printHangedMan(incorrectCount);
+                    if (incorrectCount >= 6) {
+                        System.out.println("You Lose!");
+                        System.out.println("The word was " + word);
+                        break;
+                    }
+                    printWordState(word, playerGuesses); // prints
+                    if (!getPlayerGuess(keyboard, word, playerGuesses)) {
+                        incorrectCount++;
+                    } // returns true if playerInput is a match to charAt word
+                    if (printWordState(word, playerGuesses)) {
+                        System.out.println("You win!");
+                        System.out.println("You've missed " + incorrectCount +
+                                " times! Amazing job!");
+                        System.out.println("View your score at at HangmanScores.txt");
+                        playerLog(playerOneGame.getPlayerOneName(), incorrectCount);
+                        break;
+                    } // returns true if playerGuesses length = word, meaning finished
+                }
+            } while (playAgainYesNo(keyboard));
+            System.exit(0);
+        }catch(final InputMismatchException | FileNotFoundException e){
+            e.printStackTrace();
+        }
+    }
+
     public String getPlayerOneName() {
         return playerOneName;
     }
@@ -145,5 +149,6 @@ class HangmanNew {
     public void setPlayerOneName(String playerOneName) {
         this.playerOneName = playerOneName;
     }
+
 }
 

@@ -1,3 +1,5 @@
+package Gameboard;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -13,7 +15,6 @@ public class Map {
     private JTextPane Castle;
     private JTextPane Plains3;
     private JTextPane Plains;
-    private JTextPane Plains2;
     private JTextPane Farm;
     private JTextPane Swamp2;
     private JTextPane Swamp;

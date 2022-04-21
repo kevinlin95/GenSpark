@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fbc2e5a-e3d1-478d-a25d-a0e24d8a7a2e" name="Changes" comment="Added Tests/Assertions&#10;Cleaned up some Exception Handling" />
+    <list default="true" id="7fbc2e5a-e3d1-478d-a25d-a0e24d8a7a2e" name="Changes" comment="Added Tests/Assertions&#10;Cleaned up some Exception Handling">
+      <change afterPath="$PROJECT_DIR$/../HumansVSGoblins/out/production/HumansVSGoblins/Character.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumansVSGoblins/out/production/HumansVSGoblins/Commands.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumansVSGoblins/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Characters/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Gameboard/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/HumansVSGoblins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/HumansVSGoblins.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/out/production/HumansVSGoblins/Characters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/out/production/HumansVSGoblins/Goblins.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/out/production/HumansVSGoblins/Goblins.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/out/production/HumansVSGoblins/Humans.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/out/production/HumansVSGoblins/Humans.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Characters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Characters/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Gameboard/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Goblins.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Characters/Goblins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Humans.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Characters/Humans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Map.form" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Gameboard/Map.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HumansVSGoblins/src/main/java/Gameboard/Map.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,8 +53,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Player.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="idd01i6y" />
