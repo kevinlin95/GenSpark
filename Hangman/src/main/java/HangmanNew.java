@@ -1,15 +1,19 @@
-
-import java.io.*;
-import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 class HangmanNew {
     private String playerOneName;
+    private static final List<String> words = new ArrayList<>();
+    private static final List<Character> playerGuesses = new ArrayList<>();
     public static void main(String[] args) {
         HangmanNew hangmanNew = new HangmanNew();
+        hangmanNew.gameMode();
     }
 
-    public static void playerLog(String name, int score) {
+    public static void playerLog(String name, int score, String word) {
         try { // outputting score depending on missed attempts.
             int temp = switch (score) {
                 case 0 -> 100;
@@ -22,19 +26,18 @@ class HangmanNew {
             };
             FileWriter file = new FileWriter(("/Users/kevinsmacbookair/GenSpark/Hangman/src/HangmanScores.txt"), true);
             file.write("\n");
-            file.write("Name: " + name + "  Score: " + temp);
+            file.write("Name: " + name + "  Score: " + temp + "  Word: " + word);
             file.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private static String playerOne(HangmanNew playerOneGame, Scanner keyboard) throws FileNotFoundException {
+    public static String playerOne(HangmanNew playerOneGame, Scanner keyboard) throws FileNotFoundException {
         String word;
         System.out.println("What is your name?");
         playerOneGame.setPlayerOneName(keyboard.nextLine());
         Scanner file = new Scanner(new File("/Users/kevinsmacbookair/GenSpark/Hangman/src/HangmanRandomWords.txt"));
-        List<String> words = new ArrayList<>();
         while (file.hasNext()) {
             //taking the txt that has random words and adding them to list.
             words.add(file.nextLine());
@@ -45,13 +48,13 @@ class HangmanNew {
         return word;
     }
 
-    private static boolean playAgainYesNo(Scanner keyboard) {
+    public static boolean playAgainYesNo(Scanner keyboard) {
         System.out.println("Would you like to play again? Y or N");
         String playAgain = keyboard.nextLine();
         return Objects.equals(playAgain, "Y") || Objects.equals(playAgain, "y");
     }
 
-    private static void printHangedMan(int incorrectCount) {
+    public static void printHangedMan(int incorrectCount) {
         System.out.println("+-----+");
         System.out.println(" |     ");
         if(incorrectCount >= 1){
@@ -75,7 +78,7 @@ class HangmanNew {
         }
     }
 
-    private static boolean getPlayerGuess(Scanner keyboard, String word, List<Character> playerGuesses) {
+    public static boolean getPlayerGuess(Scanner keyboard, String word, List<Character> playerGuesses) {
         System.out.println("Please enter a letter.");
         String letterGuess = keyboard.nextLine();
         try { // getting player input -> improper input, and more than 1 char input
@@ -89,7 +92,7 @@ class HangmanNew {
         }
         return word.contains(letterGuess);
     }
-    private static boolean printWordState(String word, List<Character> playerGuesses) {
+    public static boolean printWordState(String word, List<Character> playerGuesses) {
         int correctCount = 0;
         for(int i = 0; i < word.length(); i++){
             if(playerGuesses.contains(word.charAt(i))){
@@ -112,7 +115,6 @@ class HangmanNew {
             do {
                 System.out.println("HANGMAN GAME");
                 String word = playerOne(playerOneGame, keyboard);
-                List<Character> playerGuesses = new ArrayList<>();
 
                 int incorrectCount = 0; // tracking the hanged-man
                 while (true) { // main loop to run the game,
@@ -131,7 +133,7 @@ class HangmanNew {
                         System.out.println("You've missed " + incorrectCount +
                                 " times! Amazing job!");
                         System.out.println("View your score at at HangmanScores.txt");
-                        playerLog(playerOneGame.getPlayerOneName(), incorrectCount);
+                        playerLog(playerOneGame.getPlayerOneName(), incorrectCount, word);
                         break;
                     } // returns true if playerGuesses length = word, meaning finished
                 }
