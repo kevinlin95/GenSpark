@@ -1,19 +1,22 @@
 import javax.swing.*;
-import java.awt.Graphics;
+import java.awt.*;
 import java.util.Objects;
 
-public class HangmanNewPanel extends JPanel {
+public class HangmanNewPanel extends Canvas {
 
-    public HangmanNewPanel(){
-
+    public void paint(Graphics g) {
+        Toolkit t = Toolkit.getDefaultToolkit();
+        Image i = t.getImage("/Users/kevinsmacbookair/GenSpark/Hangman/src/main/resources/hangmandefault.webp");
+        g.drawImage(i, 100, 100, this);
     }
-    protected void paintComponent(Graphics g){
-        super.paintComponent(g);
-
-        ImageIcon icon = new ImageIcon
-                (Objects.requireNonNull(HangmanNewPanel.class.getResource
-                        ("/Users/kevinsmacbookair/GenSpark/Hangman/src/main/resources/hangmandefault.webp")));
-        icon.paintIcon(this, g, 100, 100);
+    public static void main(String[] args) {
+        HangmanNewPanel m = new HangmanNewPanel();
+        JFrame f = new JFrame();
+        f.add(m);
+        f.setSize(800,800);
+        f.setVisible(true);
     }
+
+
 }
 
