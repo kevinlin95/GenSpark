@@ -24,8 +24,7 @@ class HangmanNew {
                 case 5 -> 50;
                 default -> 0;
             };
-            FileWriter file = new FileWriter(("/Users/kevinsmacbookair/GenSpark/Hangman/src/HangmanScores.txt"), true);
-            file.write("\n");
+            FileWriter file = new FileWriter(("/Users/kevinsmacbookair/GenSpark/Hangman/src/main/resources/HangmanScores.txt"), true);
             file.write("Name: " + name + "  Score: " + temp + "  Word: " + word);
             file.close();
         } catch (IOException e) {
@@ -37,7 +36,7 @@ class HangmanNew {
         String word;
         System.out.println("What is your name?");
         playerOneGame.setPlayerOneName(keyboard.nextLine());
-        Scanner file = new Scanner(new File("/Users/kevinsmacbookair/GenSpark/Hangman/src/HangmanRandomWords.txt"));
+        Scanner file = new Scanner(new File("/Users/kevinsmacbookair/GenSpark/Hangman/src/main/resources/HangmanRandomWords.txt"));
         while (file.hasNext()) {
             //taking the txt that has random words and adding them to list.
             words.add(file.nextLine());
@@ -108,6 +107,7 @@ class HangmanNew {
         return (word.length() == correctCount);
     }
 
+    // The main loop to run the game
     public void gameMode (){
         HangmanNew playerOneGame = new HangmanNew();
         Scanner keyboard = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package Characters;
 
-public class Goblins implements Commands {
+public class Goblins extends Character {
 
     private int goblinStrength = 0; //damage
     private int goblinStamina = 0; // movement

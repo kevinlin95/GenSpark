@@ -16,6 +16,10 @@ public abstract class Character {
     public abstract List<Move> calculateLegalMoves(final Map map);
     public Humans m_human;
 
+    String speak(){
+        return "Who am I?";
+    }
+    abstract String attack(Object other);
     public Character(int x, int y, Humans human){
         m_x = x;
         m_y = y;

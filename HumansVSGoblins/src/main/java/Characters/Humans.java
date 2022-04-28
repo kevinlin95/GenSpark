@@ -1,24 +1,35 @@
 package Characters;
 
-public class Humans implements Commands {
+import Gameboard.Map;
 
-    private String humanName = ""; // name
-    private int humanStrength = 0; // damage
-    private int humanStamina = 0; // movement
-    private int humanHealth = 0; // hit points
-    private int humanLuck = 0; // luck for treasure chest
+import java.util.List;
 
-    public Humans(){
+public class Humans extends Character {
 
+    private String humanName; // name
+    private int humanStrength; // damage
+    private int humanStamina; // movement
+    private int humanHealth; // hit points
+    private int humanLuck; // luck for treasure chest
+
+    public Humans(int characterPosition, Alliance characterAlliance,
+                  String humanName, int humanStrength, int humanStamina,
+                  int humanHealth, int humanLuck) {
+        super(characterPosition, characterAlliance);
+        this.humanName = humanName;
+        this.humanStrength = humanStrength;
+        this.humanStamina = humanStamina;
+        this.humanHealth = humanHealth;
+        this.humanLuck = humanLuck;
     }
-    public Humans(String playername, int playerstrength, int playerstamina,
-                  int playerhealth, int playerluck){
-        this.humanName = playername;
-        this.humanStrength = playerstrength;
-        this.humanStamina = playerstamina;
-        this.humanHealth = playerhealth;
-        this.humanLuck = playerluck;
+
+
+    @Override
+    public List<Move> calculateLegalMoves(Map map) {
+
+        return null;
     }
+
     public String speak(){
         return "Begone swine!";
     }
@@ -37,6 +48,11 @@ public class Humans implements Commands {
         }
         return "The zombie bites the human for " + this.humanStrength +
                 " damage, the human survives but will be turning soon...";
+    }
+
+    @Override
+    public boolean isValidPath(int finalX, int finalY) {
+        return false;
     }
 
 
