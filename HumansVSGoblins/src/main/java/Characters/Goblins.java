@@ -1,20 +1,10 @@
 package Characters;
 
-public class Goblins extends Character {
+public class Goblins {
 
     private int goblinStrength = 0; //damage
     private int goblinStamina = 0; // movement
     private int goblinHealth = 0; // hit points
-
-    @Override
-    public String speak(){
-        return "Human bad! Die! ";
-    }
-
-    @Override
-    public String attack(Object other) {
-        return null;
-    }
 
     public int getGoblinStrength() {
         return goblinStrength;

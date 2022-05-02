@@ -1,18 +1,24 @@
+import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
+import java.util.List;
 
-class HangmanNew extends DisplayImage {
+class HangmanNew {
+
+    DisplayImage image;
+    private static int drawCounter;
     private String playerOneName;
     private static final List<String> words = new ArrayList<>();
     private static final List<Character> playerGuesses = new ArrayList<>();
-    public static void main(String[] args) {
-        HangmanNew hangmanNew = new HangmanNew();
-        hangmanNew.gameMode();
-    }
 
+    public HangmanNew(){}
+    public HangmanNew(DisplayImage image){
+        this.image = image;
+    }
     public static void playerLog(String name, int score, String word) {
         try { // outputting score depending on missed attempts.
             int temp = switch (score) {
@@ -82,7 +88,13 @@ class HangmanNew extends DisplayImage {
         System.out.println();
         return (word.length() == correctCount);
     }
+    public void printHangedMan(Graphics2D g) {
+        switch (drawCounter) {
+            case 1 -> g.drawOval(25, 35, 25, 35);
+            case 2 -> g.drawLine(35, 45, 75, 95);
 
+        }
+    }
     // The main loop to run the game
     public void gameMode (){
         HangmanNew playerOneGame = new HangmanNew();
@@ -94,14 +106,15 @@ class HangmanNew extends DisplayImage {
 
                 int incorrectCount = 0; // tracking the hanged-man
                 while (true) { // main loop to run the game,
-                    printHangedMan(incorrectCount);
                     if (incorrectCount >= 6) {
                         System.out.println("You Lose!");
                         System.out.println("The word was " + word);
                         break;
                     }
+                    //commented out below atm because displayed two lines
                     //printWordState(word, playerGuesses); // prints
                     if (!getPlayerGuess(keyboard, word, playerGuesses)) {
+                        drawCounter++;
                         incorrectCount++;
                     } // returns true if playerInput is a match to charAt word
                     if (printWordState(word, playerGuesses)) {
@@ -117,11 +130,8 @@ class HangmanNew extends DisplayImage {
             System.exit(0);
         }catch(final InputMismatchException | FileNotFoundException e){
             e.printStackTrace();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
         }
     }
-
 
     public String getPlayerOneName() {
         return playerOneName;
@@ -130,6 +140,7 @@ class HangmanNew extends DisplayImage {
     public void setPlayerOneName(String playerOneName) {
         this.playerOneName = playerOneName;
     }
+
     /*
     public static void printHangedMan(int incorrectCount) {
         System.out.println("+-----+");
