@@ -1,5 +1,4 @@
 import java.util.*;
-// fix playerinput
 
 class Hangman {
     List<String> playerinput = new ArrayList<>();
@@ -16,6 +15,10 @@ class Hangman {
     }
     public Hangman(){
 
+    }
+    public static void main(String[] args){
+        Hangman test = new Hangman();
+        test.addLetter();
     }
 
     public void addLetter() {
@@ -42,7 +45,7 @@ class Hangman {
                     playerguesses.add(temp);
                     playerinput.add(index, temp);
                     System.out.println(playerinput);
-                    returnFigureCount(playerattemptfailed);
+                    printHangedMan(playerattemptfailed);
                     returnAllGuesses();
                     returnMissedLetters();
                 }
@@ -52,7 +55,7 @@ class Hangman {
                     playerguesses.add(temp);
                     missedletters.add(temp);
                     System.out.println(playerinput);
-                    returnFigureCount(playerattemptfailed);
+                    printHangedMan(playerattemptfailed);
                     returnAllGuesses();
                     returnMissedLetters();
                 } else if (temp.equals(playerinput.get(index))) {
@@ -60,11 +63,11 @@ class Hangman {
                 }
             }
             System.out.println(playerinput);
-            returnFigureCount(playerattemptfailed);
+            printHangedMan(playerattemptfailed);
             returnAllGuesses();
             returnMissedLetters();
         } catch (NoSuchElementException | IllegalStateException | IndexOutOfBoundsException e) {
-            returnFigureCount(playerattemptfailed);
+            printHangedMan(playerattemptfailed);
         }
     }
 
@@ -110,39 +113,26 @@ class Hangman {
         }
     }
 
-    public void returnFigureCount(int playerlifeleft) {
-        switch (playerlifeleft) {
-            case 1 -> {
-                System.out.println("+---+");
-                System.out.println("O   |");
-                System.out.println("    |");
-                System.out.println("    |");
-                System.out.println("   ===");
-                System.out.println("Attempts remaining: 2");
+    public static void printHangedMan(int incorrectCount) {
+        System.out.println("+-----+");
+        System.out.println(" |     ");
+        if(incorrectCount >= 1){
+            System.out.println(" O");
+        }
+        if(incorrectCount >= 2){
+            System.out.print("\\ ");
+            if(incorrectCount >= 3){
+                System.out.print("/ ");
+                System.out.println();
             }
-            case 2 -> {
-                System.out.println(" +---+ ");
-                System.out.println(" O   | ");
-                System.out.println("/|\\ | ");
-                System.out.println("     |");
-                System.out.println("    ===");
-                System.out.println("Attempts remaining: 1");
-            }
-            case 3 -> {
-                System.out.println(" +---+ ");
-                System.out.println(" O   | ");
-                System.out.println("/|\\ | ");
-                System.out.println("| |  | ");
-                System.out.println("    ===");
-                System.out.println("Attempts remaining: 0");
-            }
-            default -> {
-                System.out.println("+---+");
-                System.out.println("    |");
-                System.out.println("    |");
-                System.out.println("    |");
-                System.out.println("   ===");
-                System.out.println("Attempts remaining: 3");
+        }
+        if(incorrectCount >= 4){
+            System.out.println(" |");
+        }
+        if(incorrectCount >= 5) {
+            System.out.print("/ ");
+            if (incorrectCount >= 6) {
+                System.out.print("\\ ");
             }
         }
     }

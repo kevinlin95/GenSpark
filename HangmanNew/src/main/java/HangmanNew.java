@@ -171,32 +171,5 @@ class HangmanNew {
     public void setPlayerOneName(String playerOneName) {
         this.playerOneName = playerOneName;
     }
-
-    /* old stik figure
-    public static void printHangedMan(int incorrectCount) {
-        System.out.println("+-----+");
-        System.out.println(" |     ");
-        if(incorrectCount >= 1){
-            System.out.println(" O");
-        }
-        if(incorrectCount >= 2){
-            System.out.print("\\ ");
-            if(incorrectCount >= 3){
-                System.out.print("/ ");
-                System.out.println();
-            }
-        }
-        if(incorrectCount >= 4){
-            System.out.println(" |");
-        }
-        if(incorrectCount >= 5) {
-            System.out.print("/ ");
-            if (incorrectCount >= 6) {
-                System.out.print("\\ ");
-            }
-        }
-    }
-
-     */
 }
 
