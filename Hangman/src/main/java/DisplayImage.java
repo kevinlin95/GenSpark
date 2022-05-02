@@ -6,7 +6,7 @@ public class DisplayImage extends JPanel {
     HangmanNew hangman = new HangmanNew(this);
 
     public DisplayImage(){
-        this.setBackground(Color.BLUE);
+        this.setBackground(Color.WHITE);
         this.setDoubleBuffered(true);
         this.setFocusable(true);
     }

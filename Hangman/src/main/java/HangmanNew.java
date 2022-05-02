@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -89,10 +88,42 @@ class HangmanNew {
         return (word.length() == correctCount);
     }
     public void printHangedMan(Graphics2D g) {
+        int baseX = 100;    // center of figure
+        int baseY = 400;    // floor (bottom of feet)
+        int height = 250;    // height of stick figure
+        int top = baseY - height;  // top of head
         switch (drawCounter) {
-            case 1 -> g.drawOval(25, 35, 25, 35);
-            case 2 -> g.drawLine(35, 45, 75, 95);
-
+            case 1 -> g.drawOval (baseX -10, top, 20, 20);
+            case 2 -> {
+                g.drawOval (baseX -10, top, 20, 20);
+                g.drawLine (baseX, top+20, baseX, baseY-30);
+            }
+            case 3 -> {
+                g.drawOval (baseX -10, top, 20, 20);
+                g.drawLine (baseX, top+20, baseX, baseY-30);
+                g.drawLine (baseX, baseY-30, baseX-15, baseY);
+            }
+            case 4 -> {
+                g.drawOval (baseX -10, top, 20, 20);
+                g.drawLine (baseX, top+20, baseX, baseY-30);
+                g.drawLine (baseX, baseY-30, baseX-15, baseY);
+                g.drawLine (baseX, baseY-30, baseX+15, baseY);
+            }
+            case 5 -> {
+                g.drawOval (baseX -10, top, 20, 20);
+                g.drawLine (baseX, top+20, baseX, baseY-30);
+                g.drawLine (baseX, baseY-30, baseX-15, baseY);
+                g.drawLine (baseX, baseY-30, baseX+15, baseY);
+                g.drawLine (baseX, baseY-70, baseX-25, baseY-70);
+            }
+            case 6 -> {
+                g.drawOval (baseX -10, top, 20, 20);  // head
+                g.drawLine (baseX, top+20, baseX, baseY-30);  // trunk
+                g.drawLine (baseX, baseY-30, baseX-15, baseY);  // legs
+                g.drawLine (baseX, baseY-30, baseX+15, baseY);
+                g.drawLine (baseX, baseY-70, baseX-25, baseY-70);  // arms
+                g.drawLine (baseX, baseY-70, baseX+20, baseY-85);
+            }
         }
     }
     // The main loop to run the game
@@ -141,7 +172,7 @@ class HangmanNew {
         this.playerOneName = playerOneName;
     }
 
-    /*
+    /* old stik figure
     public static void printHangedMan(int incorrectCount) {
         System.out.println("+-----+");
         System.out.println(" |     ");
