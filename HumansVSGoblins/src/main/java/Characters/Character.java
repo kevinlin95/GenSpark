@@ -20,9 +20,11 @@ public abstract class Character {
         return "Who am I?";
     }
     abstract String attack(Object other);
-    public Character(int x, int y, Humans human){
+    public Character(int x, int y, int characterPosition, Alliance characterAlliance, Humans human){
         m_x = x;
         m_y = y;
+        this.characterPosition = characterPosition;
+        this.characterAlliance = characterAlliance;
         m_human = human;
 
     }
