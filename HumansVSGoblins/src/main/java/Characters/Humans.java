@@ -2,23 +2,34 @@ package Characters;
 
 import Gameboard.Map;
 
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
+import java.util.List;
 
-public class Humans {
+public class Humans extends Character {
 
-    Map mp;
-    BufferedImage br;
     private String humanName; // name
     private int humanStrength; // damage
     private int humanStamina; // movement
     private int humanHealth; // hit points
+    private int humanLuck; // luck for treasure chest
 
-    public Humans(Map mp) {
-        this.mp = mp;
+    public Humans(int characterPosition, Alliance characterAlliance,
+                  String humanName, int humanStrength, int humanStamina,
+                  int humanHealth, int humanLuck) {
+        super(characterPosition, characterAlliance);
+        this.humanName = humanName;
+        this.humanStrength = humanStrength;
+        this.humanStamina = humanStamina;
+        this.humanHealth = humanHealth;
+        this.humanLuck = humanLuck;
     }
+
+
+    @Override
+    public List<Move> calculateLegalMoves(Map map) {
+
+        return null;
+    }
+
     public String speak(){
         return "Begone swine!";
     }
@@ -27,6 +38,7 @@ public class Humans {
         return this.humanName + " has " + this.humanHealth + " HP left.";
     }
 
+    @Override
     public String attack(Object other){
         var goblins = (Goblins) other;
         goblins.setGoblinHealth(goblins.getGoblinHealth() - this.humanStrength);
@@ -37,31 +49,12 @@ public class Humans {
         return "The zombie bites the human for " + this.humanStrength +
                 " damage, the human survives but will be turning soon...";
     }
-    public void update(){
-        if(mp.upPressed == true || mp.downPressed == true
-                || mp.leftPressed == true || mp.rightPressed == true){
-            if(mp.upPressed == true){
 
-            }
-            else if(mp.downPressed == true){
-
-            }
-            else if(mp.leftPressed == true){
-
-            }
-            else if (mp.rightPressed == true){
-       
-            }
-        }
+    @Override
+    public boolean isValidPath(int finalX, int finalY) {
+        return false;
     }
-    public void draw(Graphics g){
-        try{
-            br = ImageIO.read(getClass().getResourceAsStream("/boyattack.png"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        g.drawImage(br, 0, 0, 25, 25, null);
-    }
+
 
     public String getHumanName() {
         return humanName;
@@ -95,5 +88,12 @@ public class Humans {
         this.humanHealth = humanHealth;
     }
 
+    public int getHumanLuck() {
+        return humanLuck;
+    }
+
+    public void setHumanLuck(int humanLuck) {
+        this.humanLuck = humanLuck;
+    }
 }
 

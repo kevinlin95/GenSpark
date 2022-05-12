@@ -1,17 +1,11 @@
 package Gameboard;
 
-import Characters.Humans;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 public class Map {
     JPanel HumansVsGoblins;
-
-    public Humans human = new Humans(this);
     private JTextPane Desert3;
     private JTextPane Desert2;
     private JTextPane Plains4;
@@ -34,37 +28,32 @@ public class Map {
     private JButton moveDownButton;
     private JButton moveRightButton;
     private JButton moveLeftButton;
-    private JButton moveUpButton;
+    private JButton Up;
     private JButton settingsButton;
 
-    public boolean upPressed, downPressed, leftPressed, rightPressed;
     public Map() {
-        moveUpButton.addMouseListener(new MouseAdapter() {
+        Up.addActionListener(new ActionListener() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                upPressed = true;
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
-        moveLeftButton.addMouseListener(new MouseAdapter() {
+        moveDownButton.addActionListener(new ActionListener() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                leftPressed = true;
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
-        moveDownButton.addMouseListener(new MouseAdapter() {
+        moveLeftButton.addActionListener(new ActionListener() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                downPressed = true;
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
-        moveRightButton.addMouseListener(new MouseAdapter() {
+        moveRightButton.addActionListener(new ActionListener() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                rightPressed = true;
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }
