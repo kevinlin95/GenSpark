@@ -27,24 +27,8 @@ class HangmanNewTest {
 
     @RepeatedTest(value = 5, name = "Random Letter")
     void makeSureWordIsRandom() throws FileNotFoundException {
-        //when(HangmanNew.playerOne(test, scanner)).thenReturn();
+
     }
 
-
-    @Test
-    void playAgainYesNo() {
-        //when(playAgainYesNo()).thenReturn();
-    }
-
-    @ParameterizedTest
-    @ValueSource(strings = {"a", "e", "i", "o", "u"})
-    void getPlayerGuess(String randomCharacters) {
-        when(HangmanNew.getPlayerGuess(scanner, randomCharacters, playerGuesses())).thenReturn(true);
-    }
-
-    @DisplayName("Needed to test for playerGuesses")
-    private static List<Character> playerGuesses(){
-        return Arrays.asList('a', 'b', 'c', 'd');
-    }
 
 }

@@ -1,8 +1,5 @@
 import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 import java.util.List;
 
@@ -29,7 +26,7 @@ class HangmanNew {
                 case 5 -> 50;
                 default -> 0;
             };
-            FileWriter file = new FileWriter(("/Users/kevinsmacbookair/GenSpark/Hangman/src/main/resources/HangmanScores.txt"), true);
+            FileWriter file = new FileWriter(("/Users/kevinsmacbookair/GenSpark/HangmanNew/src/main/resources/HangmanScores.txt"), true);
             file.write("Name: " + name + "  Score: " + temp + "  Word: " + word);
             file.close();
         } catch (IOException e) {
@@ -41,7 +38,7 @@ class HangmanNew {
         String word;
         System.out.println("What is your name?");
         playerOneGame.setPlayerOneName(keyboard.nextLine());
-        Scanner file = new Scanner(new File("/Users/kevinsmacbookair/GenSpark/Hangman/src/main/resources/HangmanRandomWords.txt"));
+        Scanner file = new Scanner(new File("/Users/kevinsmacbookair/GenSpark/HangmanNew/src/main/resources/HangmanRandomWords.txt"));
         while (file.hasNext()) {
             //taking the txt that has random words and adding them to list.
             words.add(file.nextLine());
@@ -122,7 +119,7 @@ class HangmanNew {
                 g.drawLine (baseX, baseY-30, baseX-15, baseY);  // legs
                 g.drawLine (baseX, baseY-30, baseX+15, baseY);
                 g.drawLine (baseX, baseY-70, baseX-25, baseY-70);  // arms
-                g.drawLine (baseX, baseY-70, baseX+20, baseY-85);
+                g.drawLine (baseX, baseY-70, baseX+25, baseY-70);
             }
         }
     }
