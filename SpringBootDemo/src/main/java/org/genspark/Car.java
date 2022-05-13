@@ -1,8 +1,13 @@
 package org.genspark;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("myCar")
 public class Car implements Vehicle {
-    private Tire ty;
+
+    @Autowired
+    public Tire ty;
 
 //-----------------------------------------------//
     //Constructor Injection

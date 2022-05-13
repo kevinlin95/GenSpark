@@ -1,6 +1,11 @@
 package org.genspark;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Tire{
+
     public String brand;
     public int size;
 
