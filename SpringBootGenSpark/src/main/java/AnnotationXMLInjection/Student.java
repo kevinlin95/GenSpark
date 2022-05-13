@@ -1,20 +1,15 @@
-package JavaConfiguration;
+package AnnotationXMLInjection;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("Student")
 public class Student {
     @Autowired
     public Address adr;
     @Autowired
     public Phone person;
-
-    public Student(Address adr, Phone person) {
-        this.adr = adr;
-        this.person = person;
-    }
 
     public Address getAdr() {
         return adr;
@@ -33,7 +28,7 @@ public class Student {
     }
 
     public void display(){
-        System.out.println("Information: " + person + " " + adr);
+        System.out.println("Information: " + person);
     }
-}
+    }
 

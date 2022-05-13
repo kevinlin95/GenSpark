@@ -2,13 +2,15 @@ package JavaConfiguration;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Student Adrien = (Student) context.getBean(Student.class);
-
+        AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        Student Adrien = context.getBean(Student.class);
+        Adrien.display();
+        context.close();
     }
 }

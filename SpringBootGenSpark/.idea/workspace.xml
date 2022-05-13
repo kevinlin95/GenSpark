@@ -4,28 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18aab6b0-f17e-4b70-9c51-df3ab241cb7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_beans_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_context_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_core_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_expression_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/SpringBootDemo.iml" afterDir="false" />
+    <list default="true" id="18aab6b0-f17e-4b70-9c51-df3ab241cb7f" name="Changes" comment="5/13">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnnotationXMLInjection/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnnotationXMLInjection/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnnotationXMLInjection/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AnnotationXMLInjection/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConstructorXMLInjection/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConstructorXMLInjection/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConstructorXMLInjection/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConstructorXMLInjection/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Annotation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Constructor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/JavaConfiguration/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/JavaConfiguration/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/JavaConfiguration/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/JavaConfiguration/Phone.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/JavaConfiguration/Student.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/org/genspark/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/java/org/genspark/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/FieldInjection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/src/main/resources/FieldInjection.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Assignment1/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Assignment1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Assignment1/Phone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Assignment1/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Constructor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Field.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Setter.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/org/genspark/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/target/classes/org/genspark/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/src/main/java/org/genspark/Samsung.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/src/main/java/org/genspark/Samsung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/MediaTek.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/MediaTek.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/MobileProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/MobileProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/Samsung.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/Samsung.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/SnapDragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/target/classes/org/genspark/SnapDragon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnnotationFileInjection/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnnotationFileInjection/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnnotationFileInjection/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AnnotationFileInjection/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLConfiguration/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLConfiguration/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLConfiguration/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/XMLConfiguration/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringFile.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,15 +102,64 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/kevinsmacbookair/GenSpark/SpringBootGenSpark/src/main/java/JavaConfiguration",
+    "last_opened_file_path": "/Users/kevinsmacbookair/GenSpark/SpringBootGenSpark/src/main/java/AnnotationXMLInjection",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/AnnotationXMLInjection" />
       <recent name="$PROJECT_DIR$/src/main/java/JavaConfiguration" />
       <recent name="$PROJECT_DIR$/src/main/java/AnnotationWithFile" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="AnnotationXMLInjection.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AnnotationXMLInjection.App" />
+      <module name="SpringBootGenSpark" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AnnotationXMLInjection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaConfiguration.App" />
+      <module name="SpringBootGenSpark" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaConfiguration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorXMLInjection.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConstructorXMLInjection.App" />
+      <module name="SpringBootGenSpark" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ConstructorXMLInjection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.AnnotationXMLInjection.App" />
+        <item itemvalue="Application.ConstructorXMLInjection.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,6 +170,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652403998736</updated>
     </task>
+    <task id="LOCAL-00001" summary="5/13">
+      <created>1652460231152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652460231152</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,5 +225,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="5/13" />
+    <option name="LAST_COMMIT_MESSAGE" value="5/13" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.NoSuchBeanDefinitionException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

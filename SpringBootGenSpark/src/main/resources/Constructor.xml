@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+    <!--constructor-arg and needs a ref as well-->
+    <bean id="Student" class="ConstructorXMLInjection.Student" init-method="display" >
+        <constructor-arg index="0" ref="Address" />
+        <constructor-arg index="1" ref="Phone" />
+    </bean>
+    <bean id="Address" class="ConstructorXMLInjection.Address" >
+        <constructor-arg index="0" value="New York City" />
+        <constructor-arg index="1" value="New York" />
+        <constructor-arg index="2" value="US" />
+        <constructor-arg index="3" value="11111" />
+    </bean>
+    <bean id="Phone" class="ConstructorXMLInjection.Phone"  >
+        <constructor-arg index="0" value="012345" />
+        <constructor-arg index="1" value="Admin" />
+        <constructor-arg index="2" ref="Address" />
+    </bean>
+
+</beans>
