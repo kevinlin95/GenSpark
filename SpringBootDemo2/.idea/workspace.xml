@@ -32,7 +32,12 @@
       <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/Setter.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBootDemo/target/classes/org/genspark/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/target/classes/org/genspark/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/genspark/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/genspark/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/genspark/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/genspark/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/genspark/MediaTek.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/genspark/MediaTek.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/genspark/MobileProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/genspark/MobileProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/genspark/Samsung.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/genspark/Samsung.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/genspark/SnapDragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/genspark/SnapDragon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/AnnotationFileInjection/Address.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/AnnotationFileInjection/App.java" beforeDir="false" />
