@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18aab6b0-f17e-4b70-9c51-df3ab241cb7f" name="Changes" comment="" />
+    <list default="true" id="18aab6b0-f17e-4b70-9c51-df3ab241cb7f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_beans_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_context_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_core_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_expression_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo/SpringBootDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootDemo2/src/main/java/org/genspark/Samsung.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo2/src/main/java/org/genspark/Samsung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaConfiguration/Student.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +71,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",

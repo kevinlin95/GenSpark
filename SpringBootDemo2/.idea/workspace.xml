@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77e03502-e8ae-413c-ad9e-1c5d4d986828" name="Changes" comment="spring boot demo2" />
+    <list default="true" id="77e03502-e8ae-413c-ad9e-1c5d4d986828" name="Changes" comment="spring boot demo2">
+      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/JavaConfiguration/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/JavaConfiguration/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/JavaConfiguration/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/JavaConfiguration/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/JavaConfiguration/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/JavaConfiguration/Student.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
