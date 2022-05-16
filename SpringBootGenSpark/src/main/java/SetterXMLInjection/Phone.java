@@ -1,4 +1,4 @@
-package AnnotationXMLInjection;
+package SetterXMLInjection;
 
 import org.springframework.stereotype.Component;
 

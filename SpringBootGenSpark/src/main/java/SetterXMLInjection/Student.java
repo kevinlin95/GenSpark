@@ -1,4 +1,4 @@
-package AnnotationXMLInjection;
+package SetterXMLInjection;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +10,14 @@ public class Student {
     public Address adr;
     @Autowired
     public Phone person;
+
+    public Student() {
+    }
+
+    public Student(Address adr, Phone person) {
+        this.adr = adr;
+        this.person = person;
+    }
 
     public Address getAdr() {
         return adr;
