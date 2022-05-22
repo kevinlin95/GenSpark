@@ -8,11 +8,6 @@
       <change beforePath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/AnnotationXMLInjection/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/SetterXMLInjection/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/AnnotationXMLInjection/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/SetterXMLInjection/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/AnnotationXMLInjection/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/SetterXMLInjection/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/AnnotationXMLInjection/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/java/SetterXMLInjection/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/resources/Annotation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/src/main/resources/Setter.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
