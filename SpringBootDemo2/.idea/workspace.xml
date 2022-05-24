@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77e03502-e8ae-413c-ad9e-1c5d4d986828" name="Changes" comment="spring boot demo2">
-      <change beforePath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBootGenSpark/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationUserPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/PasswordConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/student/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringSecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/demo/SpringSecurityRestaurantAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/SpringSecurityRestaurantAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringSecurity/src/test/java/com/example/demo/SpringSecurityRestaurantAppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/src/test/java/com/example/App/SpringSecurityRestaurantAppApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
