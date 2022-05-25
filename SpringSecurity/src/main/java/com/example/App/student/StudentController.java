@@ -9,20 +9,18 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("students")
-public class StudentController {
-
+@RequestMapping("api")
+public class  StudentController {
     private static final List<Student> STUDENTS = Arrays.asList(
             new Student(1, "Kevin Lin"),
             new Student(2, "Billy Lin"),
             new Student(3, "Danny Lin")
     );
-    @GetMapping(path="/{studentId}")
+    @GetMapping(path="/students/{studentId}")
     public Student getStudent(@PathVariable("studentId") Integer studentId){
         return (Student) STUDENTS.stream()
                 .filter(student -> studentId.equals(student.getStudentId()))
                 .findFirst()
                 .orElseThrow(() -> new IllegalStateException("Student " + studentId + " does not exist"));
     }
-
 }
