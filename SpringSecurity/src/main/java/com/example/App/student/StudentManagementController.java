@@ -16,21 +16,21 @@ public class StudentManagementController {
             new Student(3, "Danny Lin")
     );
 
-    @GetMapping
+    @GetMapping(path="/students")
     @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_ADMINTRAINEE')")
     // hasRole, hasAnyRole, hasAuthority, hasAnyAuthority
     public List<Student> getAllStudents(){
         return STUDENTS;
     }
 
-    @PostMapping
-    @PreAuthorize("hasAuthority('student:write')")
+    @PostMapping(path="{studentId}")
+    @PreAuthorize("hasAuthority('admin:write')")
     public void registerNewStudent(Student student){
         System.out.println(student);
     }
 
     @DeleteMapping(path="{studentId}")
-    @PreAuthorize("hasAuthority('student:write')")
+    @PreAuthorize("hasAuthority('student:delete')")
     public void deleteStudent(@PathVariable("studentId") Integer studentId){
         System.out.println(studentId);
     }

@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77e03502-e8ae-413c-ad9e-1c5d4d986828" name="Changes" comment="spring boot demo2">
-      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationUserPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/PasswordConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/student/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Temp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo3/src/main/java/com/example/controller/EmployeeRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo3/src/main/java/com/example/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo3/src/main/java/com/example/respository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo3/src/main/java/com/example/respository/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBootDemo3/src/main/java/com/example/respository/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/Controller/TemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/Exceptions/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/Exceptions/EmailAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/Exceptions/InternalServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/Exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/Exceptions/UsernameAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/resources/templates/courses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringSecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/demo/SpringSecurityRestaurantAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/SpringSecurityRestaurantAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringSecurity/src/test/java/com/example/demo/SpringSecurityRestaurantAppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/src/test/java/com/example/App/SpringSecurityRestaurantAppApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/security/ApplicationUserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/student/StudentManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity/src/main/java/com/example/App/student/StudentManagementController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,18 +71,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kevinsmacbookair/GenSpark/SpringBootDemo2&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/kevinsmacbookair/GenSpark/SpringBootDemo2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "61bfee279f0e534bdc1ffbc6700e322e"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.genspark.App" />
@@ -100,6 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652385320528</updated>
+      <workItem from="1657899774074" duration="231000" />
     </task>
     <task id="LOCAL-00001" summary="spring boot demo2">
       <created>1652453689613</created>
@@ -110,6 +124,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
